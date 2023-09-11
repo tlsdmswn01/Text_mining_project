@@ -1,0 +1,340 @@
+2023-09-04 12:31:21,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-04 12:31:21,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-04 12:31:21,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-04 12:31:21,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-04 12:31:23,842:INFO:PyCaret ClassificationExperiment
+2023-09-04 12:31:23,847:INFO:Logging name: clf-default-name
+2023-09-04 12:31:23,847:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-09-04 12:31:23,848:INFO:version 3.0.4
+2023-09-04 12:31:23,848:INFO:Initializing setup()
+2023-09-04 12:31:23,848:INFO:self.USI: 7f67
+2023-09-04 12:31:23,848:INFO:self._variable_keys: {'_ml_usecase', 'fold_generator', 'X_test', 'gpu_n_jobs_param', 'log_plots_param', 'fold_shuffle_param', 'logging_param', 'seed', 'memory', 'X_train', 'X', 'target_param', 'y_test', 'is_multiclass', 'USI', 'exp_id', 'gpu_param', 'html_param', '_available_plots', 'data', 'pipeline', 'exp_name_log', 'fix_imbalance', 'idx', 'n_jobs_param', 'fold_groups_param', 'y', 'y_train'}
+2023-09-04 12:31:23,848:INFO:Checking environment
+2023-09-04 12:31:23,848:INFO:python_version: 3.10.12
+2023-09-04 12:31:23,848:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-04 12:31:23,849:INFO:machine: x86_64
+2023-09-04 12:31:23,849:INFO:platform: Linux-5.15.109+-x86_64-with-glibc2.35
+2023-09-04 12:31:23,850:INFO:Memory: svmem(total=13613314048, available=12015857664, percent=11.7, used=1255141376, free=1221652480, active=1260412928, inactive=10526679040, buffers=123478016, cached=11013042176, shared=9064448, slab=504446976)
+2023-09-04 12:31:23,851:INFO:Physical Core: 1
+2023-09-04 12:31:23,851:INFO:Logical Core: 2
+2023-09-04 12:31:23,851:INFO:Checking libraries
+2023-09-04 12:31:23,851:INFO:System:
+2023-09-04 12:31:23,851:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-04 12:31:23,852:INFO:executable: /usr/bin/python3
+2023-09-04 12:31:23,852:INFO:   machine: Linux-5.15.109+-x86_64-with-glibc2.35
+2023-09-04 12:31:23,852:INFO:PyCaret required dependencies:
+2023-09-04 12:31:29,093:INFO:                 pip: 23.1.2
+2023-09-04 12:31:29,093:INFO:          setuptools: 67.7.2
+2023-09-04 12:31:29,094:INFO:             pycaret: 3.0.4
+2023-09-04 12:31:29,094:INFO:             IPython: 7.34.0
+2023-09-04 12:31:29,094:INFO:          ipywidgets: 7.7.1
+2023-09-04 12:31:29,094:INFO:                tqdm: 4.66.1
+2023-09-04 12:31:29,094:INFO:               numpy: 1.23.5
+2023-09-04 12:31:29,094:INFO:              pandas: 1.5.3
+2023-09-04 12:31:29,095:INFO:              jinja2: 3.1.2
+2023-09-04 12:31:29,095:INFO:               scipy: 1.10.1
+2023-09-04 12:31:29,095:INFO:              joblib: 1.3.2
+2023-09-04 12:31:29,095:INFO:             sklearn: 1.2.2
+2023-09-04 12:31:29,095:INFO:                pyod: 1.1.0
+2023-09-04 12:31:29,095:INFO:            imblearn: 0.10.1
+2023-09-04 12:31:29,095:INFO:   category_encoders: 2.6.2
+2023-09-04 12:31:29,096:INFO:            lightgbm: 4.0.0
+2023-09-04 12:31:29,096:INFO:               numba: 0.56.4
+2023-09-04 12:31:29,096:INFO:            requests: 2.31.0
+2023-09-04 12:31:29,096:INFO:          matplotlib: 3.7.1
+2023-09-04 12:31:29,096:INFO:          scikitplot: 0.3.7
+2023-09-04 12:31:29,096:INFO:         yellowbrick: 1.5
+2023-09-04 12:31:29,096:INFO:              plotly: 5.15.0
+2023-09-04 12:31:29,097:INFO:    plotly-resampler: Not installed
+2023-09-04 12:31:29,097:INFO:             kaleido: 0.2.1
+2023-09-04 12:31:29,097:INFO:           schemdraw: 0.15
+2023-09-04 12:31:29,097:INFO:         statsmodels: 0.14.0
+2023-09-04 12:31:29,097:INFO:              sktime: 0.22.0
+2023-09-04 12:31:29,098:INFO:               tbats: 1.1.3
+2023-09-04 12:31:29,098:INFO:            pmdarima: 2.0.3
+2023-09-04 12:31:29,098:INFO:              psutil: 5.9.5
+2023-09-04 12:31:29,098:INFO:          markupsafe: 2.1.3
+2023-09-04 12:31:29,098:INFO:             pickle5: Not installed
+2023-09-04 12:31:29,099:INFO:         cloudpickle: 2.2.1
+2023-09-04 12:31:29,099:INFO:         deprecation: 2.1.0
+2023-09-04 12:31:29,099:INFO:              xxhash: 3.3.0
+2023-09-04 12:31:29,099:INFO:           wurlitzer: 3.0.3
+2023-09-04 12:31:29,099:INFO:PyCaret optional dependencies:
+2023-09-04 12:31:29,446:WARNING:/usr/local/lib/python3.10/dist-packages/trio/_core/_multierror.py:412: RuntimeWarning: IPython detected, but you already have a custom exception handler installed. I'll skip installing Trio's custom handler, but this means exception groups will not show full tracebacks.
+  warnings.warn(
+
+2023-09-04 12:31:31,617:INFO:                shap: 0.42.1
+2023-09-04 12:31:31,618:INFO:           interpret: 0.4.4
+2023-09-04 12:31:31,618:INFO:                umap: 0.5.3
+2023-09-04 12:31:31,618:INFO:    pandas_profiling: 3.6.6
+2023-09-04 12:31:31,618:INFO:  explainerdashboard: 0.4.3
+2023-09-04 12:31:31,618:INFO:             autoviz: 0.1.730
+2023-09-04 12:31:31,619:INFO:           fairlearn: 0.7.0
+2023-09-04 12:31:31,619:INFO:          deepchecks: 0.17.4
+2023-09-04 12:31:31,619:INFO:             xgboost: 1.7.6
+2023-09-04 12:31:31,619:INFO:            catboost: 1.2.1
+2023-09-04 12:31:31,619:INFO:              kmodes: 0.12.2
+2023-09-04 12:31:31,619:INFO:             mlxtend: 0.22.0
+2023-09-04 12:31:31,619:INFO:       statsforecast: 1.6.0
+2023-09-04 12:31:31,620:INFO:        tune_sklearn: 0.4.6
+2023-09-04 12:31:31,620:INFO:                 ray: 2.6.3
+2023-09-04 12:31:31,620:INFO:            hyperopt: 0.2.7
+2023-09-04 12:31:31,620:INFO:              optuna: 3.3.0
+2023-09-04 12:31:31,620:INFO:               skopt: 0.9.0
+2023-09-04 12:31:31,620:INFO:              mlflow: 1.30.1
+2023-09-04 12:31:31,620:INFO:              gradio: 3.42.0
+2023-09-04 12:31:31,621:INFO:             fastapi: 0.103.1
+2023-09-04 12:31:31,621:INFO:             uvicorn: 0.23.2
+2023-09-04 12:31:31,621:INFO:              m2cgen: 0.10.0
+2023-09-04 12:31:31,621:INFO:           evidently: 0.2.8
+2023-09-04 12:31:31,621:INFO:               fugue: 0.8.6
+2023-09-04 12:31:31,621:INFO:           streamlit: Not installed
+2023-09-04 12:31:31,621:INFO:             prophet: 1.1.4
+2023-09-04 12:31:31,622:INFO:None
+2023-09-04 12:31:31,626:INFO:Set up data.
+2023-09-04 12:51:50,717:WARNING:<ipython-input-96-b8db93d6064b>:2: FutureWarning: The default value of regex will change from True to False in a future version.
+  analyze_df['제목'] = analyze_df['제목'].str.replace("[^ㄱ-ㅎㅏ-ㅣ가-힣!+?+❤️+ ]","")
+
+2023-09-04 12:52:07,001:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/feature_extraction/text.py:528: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+
+2023-09-04 12:53:00,006:INFO:PyCaret ClassificationExperiment
+2023-09-04 12:53:00,009:INFO:Logging name: clf-default-name
+2023-09-04 12:53:00,009:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-09-04 12:53:00,010:INFO:version 3.0.4
+2023-09-04 12:53:00,010:INFO:Initializing setup()
+2023-09-04 12:53:00,010:INFO:self.USI: 4635
+2023-09-04 12:53:00,010:INFO:self._variable_keys: {'_ml_usecase', 'fold_generator', 'X_test', 'gpu_n_jobs_param', 'log_plots_param', 'fold_shuffle_param', 'logging_param', 'seed', 'memory', 'X_train', 'X', 'target_param', 'y_test', 'is_multiclass', 'USI', 'exp_id', 'gpu_param', 'html_param', '_available_plots', 'data', 'pipeline', 'exp_name_log', 'fix_imbalance', 'idx', 'n_jobs_param', 'fold_groups_param', 'y', 'y_train'}
+2023-09-04 12:53:00,010:INFO:Checking environment
+2023-09-04 12:53:00,011:INFO:python_version: 3.10.12
+2023-09-04 12:53:00,011:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-04 12:53:00,011:INFO:machine: x86_64
+2023-09-04 12:53:00,011:INFO:platform: Linux-5.15.109+-x86_64-with-glibc2.35
+2023-09-04 12:53:00,011:INFO:Memory: svmem(total=13613314048, available=11543961600, percent=15.2, used=1717760000, free=5575458816, active=1267859456, inactive=6273101824, buffers=133808128, cached=6186287104, shared=18223104, slab=386084864)
+2023-09-04 12:53:00,012:INFO:Physical Core: 1
+2023-09-04 12:53:00,012:INFO:Logical Core: 2
+2023-09-04 12:53:00,012:INFO:Checking libraries
+2023-09-04 12:53:00,012:INFO:System:
+2023-09-04 12:53:00,012:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-04 12:53:00,013:INFO:executable: /usr/bin/python3
+2023-09-04 12:53:00,013:INFO:   machine: Linux-5.15.109+-x86_64-with-glibc2.35
+2023-09-04 12:53:00,013:INFO:PyCaret required dependencies:
+2023-09-04 12:53:00,013:INFO:                 pip: 23.1.2
+2023-09-04 12:53:00,013:INFO:          setuptools: 67.7.2
+2023-09-04 12:53:00,013:INFO:             pycaret: 3.0.4
+2023-09-04 12:53:00,013:INFO:             IPython: 7.34.0
+2023-09-04 12:53:00,013:INFO:          ipywidgets: 7.7.1
+2023-09-04 12:53:00,013:INFO:                tqdm: 4.66.1
+2023-09-04 12:53:00,013:INFO:               numpy: 1.23.5
+2023-09-04 12:53:00,013:INFO:              pandas: 1.5.3
+2023-09-04 12:53:00,014:INFO:              jinja2: 3.1.2
+2023-09-04 12:53:00,014:INFO:               scipy: 1.10.1
+2023-09-04 12:53:00,014:INFO:              joblib: 1.3.2
+2023-09-04 12:53:00,014:INFO:             sklearn: 1.2.2
+2023-09-04 12:53:00,014:INFO:                pyod: 1.1.0
+2023-09-04 12:53:00,014:INFO:            imblearn: 0.10.1
+2023-09-04 12:53:00,014:INFO:   category_encoders: 2.6.2
+2023-09-04 12:53:00,014:INFO:            lightgbm: 4.0.0
+2023-09-04 12:53:00,014:INFO:               numba: 0.56.4
+2023-09-04 12:53:00,014:INFO:            requests: 2.31.0
+2023-09-04 12:53:00,014:INFO:          matplotlib: 3.7.1
+2023-09-04 12:53:00,014:INFO:          scikitplot: 0.3.7
+2023-09-04 12:53:00,014:INFO:         yellowbrick: 1.5
+2023-09-04 12:53:00,015:INFO:              plotly: 5.15.0
+2023-09-04 12:53:00,015:INFO:    plotly-resampler: Not installed
+2023-09-04 12:53:00,015:INFO:             kaleido: 0.2.1
+2023-09-04 12:53:00,015:INFO:           schemdraw: 0.15
+2023-09-04 12:53:00,015:INFO:         statsmodels: 0.14.0
+2023-09-04 12:53:00,015:INFO:              sktime: 0.22.0
+2023-09-04 12:53:00,015:INFO:               tbats: 1.1.3
+2023-09-04 12:53:00,015:INFO:            pmdarima: 2.0.3
+2023-09-04 12:53:00,015:INFO:              psutil: 5.9.5
+2023-09-04 12:53:00,015:INFO:          markupsafe: 2.1.3
+2023-09-04 12:53:00,015:INFO:             pickle5: Not installed
+2023-09-04 12:53:00,015:INFO:         cloudpickle: 2.2.1
+2023-09-04 12:53:00,015:INFO:         deprecation: 2.1.0
+2023-09-04 12:53:00,015:INFO:              xxhash: 3.3.0
+2023-09-04 12:53:00,016:INFO:           wurlitzer: 3.0.3
+2023-09-04 12:53:00,016:INFO:PyCaret optional dependencies:
+2023-09-04 12:53:00,016:INFO:                shap: 0.42.1
+2023-09-04 12:53:00,016:INFO:           interpret: 0.4.4
+2023-09-04 12:53:00,016:INFO:                umap: 0.5.3
+2023-09-04 12:53:00,016:INFO:    pandas_profiling: 3.6.6
+2023-09-04 12:53:00,016:INFO:  explainerdashboard: 0.4.3
+2023-09-04 12:53:00,017:INFO:             autoviz: 0.1.730
+2023-09-04 12:53:00,017:INFO:           fairlearn: 0.7.0
+2023-09-04 12:53:00,017:INFO:          deepchecks: 0.17.4
+2023-09-04 12:53:00,017:INFO:             xgboost: 1.7.6
+2023-09-04 12:53:00,017:INFO:            catboost: 1.2.1
+2023-09-04 12:53:00,017:INFO:              kmodes: 0.12.2
+2023-09-04 12:53:00,017:INFO:             mlxtend: 0.22.0
+2023-09-04 12:53:00,017:INFO:       statsforecast: 1.6.0
+2023-09-04 12:53:00,017:INFO:        tune_sklearn: 0.4.6
+2023-09-04 12:53:00,017:INFO:                 ray: 2.6.3
+2023-09-04 12:53:00,017:INFO:            hyperopt: 0.2.7
+2023-09-04 12:53:00,017:INFO:              optuna: 3.3.0
+2023-09-04 12:53:00,018:INFO:               skopt: 0.9.0
+2023-09-04 12:53:00,018:INFO:              mlflow: 1.30.1
+2023-09-04 12:53:00,018:INFO:              gradio: 3.42.0
+2023-09-04 12:53:00,018:INFO:             fastapi: 0.103.1
+2023-09-04 12:53:00,018:INFO:             uvicorn: 0.23.2
+2023-09-04 12:53:00,018:INFO:              m2cgen: 0.10.0
+2023-09-04 12:53:00,018:INFO:           evidently: 0.2.8
+2023-09-04 12:53:00,019:INFO:               fugue: 0.8.6
+2023-09-04 12:53:00,019:INFO:           streamlit: Not installed
+2023-09-04 12:53:00,019:INFO:             prophet: 1.1.4
+2023-09-04 12:53:00,019:INFO:None
+2023-09-04 12:53:00,019:INFO:Set up data.
+2023-09-04 12:54:29,334:WARNING:<ipython-input-114-a04a30055a5b>:2: FutureWarning: The default value of regex will change from True to False in a future version.
+  analyze_df['제목'] = analyze_df['제목'].str.replace("[^ㄱ-ㅎㅏ-ㅣ가-힣!+?+❤️+ ]","")
+
+2023-09-04 12:55:05,894:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/feature_extraction/text.py:528: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+
+2023-09-04 12:58:50,714:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/feature_extraction/text.py:528: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+
+2023-09-04 13:40:41,978:WARNING:<ipython-input-173-a04a30055a5b>:2: FutureWarning: The default value of regex will change from True to False in a future version.
+  analyze_df['제목'] = analyze_df['제목'].str.replace("[^ㄱ-ㅎㅏ-ㅣ가-힣!+?+❤️+ ]","")
+
+2023-09-04 13:40:52,547:WARNING:/usr/local/lib/python3.10/dist-packages/sklearn/feature_extraction/text.py:528: UserWarning: The parameter 'token_pattern' will not be used since 'tokenizer' is not None'
+  warnings.warn(
+
+2023-09-04 14:00:45,860:WARNING:<ipython-input-217-a8bbd7ec9e03>:11: UserWarning: Glyph 44048 (\N{HANGUL SYLLABLE GAM}) missing from current font.
+  fig.tight_layout()
+
+2023-09-04 14:00:45,867:WARNING:<ipython-input-217-a8bbd7ec9e03>:11: UserWarning: Glyph 49457 (\N{HANGUL SYLLABLE SEONG}) missing from current font.
+  fig.tight_layout()
+
+2023-09-04 14:00:45,868:WARNING:<ipython-input-217-a8bbd7ec9e03>:11: UserWarning: Glyph 46972 (\N{HANGUL SYLLABLE RA}) missing from current font.
+  fig.tight_layout()
+
+2023-09-04 14:00:45,868:WARNING:<ipython-input-217-a8bbd7ec9e03>:11: UserWarning: Glyph 48296 (\N{HANGUL SYLLABLE BEL}) missing from current font.
+  fig.tight_layout()
+
+2023-09-04 14:00:45,958:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/events.py:89: UserWarning: Glyph 44048 (\N{HANGUL SYLLABLE GAM}) missing from current font.
+  func(*args, **kwargs)
+
+2023-09-04 14:00:45,960:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/events.py:89: UserWarning: Glyph 49457 (\N{HANGUL SYLLABLE SEONG}) missing from current font.
+  func(*args, **kwargs)
+
+2023-09-04 14:00:45,961:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/events.py:89: UserWarning: Glyph 46972 (\N{HANGUL SYLLABLE RA}) missing from current font.
+  func(*args, **kwargs)
+
+2023-09-04 14:00:45,962:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/events.py:89: UserWarning: Glyph 48296 (\N{HANGUL SYLLABLE BEL}) missing from current font.
+  func(*args, **kwargs)
+
+2023-09-04 14:00:46,102:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 44048 (\N{HANGUL SYLLABLE GAM}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+
+2023-09-04 14:00:46,103:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 49457 (\N{HANGUL SYLLABLE SEONG}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+
+2023-09-04 14:00:46,104:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 46972 (\N{HANGUL SYLLABLE RA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+
+2023-09-04 14:00:46,105:WARNING:/usr/local/lib/python3.10/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 48296 (\N{HANGUL SYLLABLE BEL}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+
+2023-09-05 05:48:20,837:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-05 05:48:21,172:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-05 05:48:21,172:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-05 05:48:21,173:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-05 05:48:22,265:INFO:PyCaret ClassificationExperiment
+2023-09-05 05:48:22,265:INFO:Logging name: clf-default-name
+2023-09-05 05:48:22,265:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-09-05 05:48:22,266:INFO:version 3.0.4
+2023-09-05 05:48:22,266:INFO:Initializing setup()
+2023-09-05 05:48:22,266:INFO:self.USI: d491
+2023-09-05 05:48:22,266:INFO:self._variable_keys: {'gpu_n_jobs_param', 'exp_name_log', 'X', 'data', 'n_jobs_param', 'exp_id', 'y_test', 'is_multiclass', 'fold_groups_param', 'y_train', 'fold_shuffle_param', 'y', 'fix_imbalance', 'idx', 'X_test', 'fold_generator', 'USI', 'html_param', 'memory', 'X_train', 'seed', 'gpu_param', 'logging_param', '_ml_usecase', 'target_param', 'pipeline', 'log_plots_param', '_available_plots'}
+2023-09-05 05:48:22,266:INFO:Checking environment
+2023-09-05 05:48:22,266:INFO:python_version: 3.10.12
+2023-09-05 05:48:22,266:INFO:python_build: ('main', 'Jun 11 2023 05:26:28')
+2023-09-05 05:48:22,267:INFO:machine: x86_64
+2023-09-05 05:48:22,267:INFO:platform: Linux-5.15.109+-x86_64-with-glibc2.35
+2023-09-05 05:48:22,267:INFO:Memory: svmem(total=13613314048, available=12069883904, percent=11.3, used=1201733632, free=1217191936, active=1241616384, inactive=10569097216, buffers=126529536, cached=11067858944, shared=8327168, slab=501460992)
+2023-09-05 05:48:22,268:INFO:Physical Core: 1
+2023-09-05 05:48:22,268:INFO:Logical Core: 2
+2023-09-05 05:48:22,268:INFO:Checking libraries
+2023-09-05 05:48:22,268:INFO:System:
+2023-09-05 05:48:22,268:INFO:    python: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
+2023-09-05 05:48:22,269:INFO:executable: /usr/bin/python3
+2023-09-05 05:48:22,269:INFO:   machine: Linux-5.15.109+-x86_64-with-glibc2.35
+2023-09-05 05:48:22,269:INFO:PyCaret required dependencies:
+2023-09-05 05:48:22,656:INFO:                 pip: 23.1.2
+2023-09-05 05:48:22,657:INFO:          setuptools: 67.7.2
+2023-09-05 05:48:22,657:INFO:             pycaret: 3.0.4
+2023-09-05 05:48:22,657:INFO:             IPython: 7.34.0
+2023-09-05 05:48:22,657:INFO:          ipywidgets: 7.7.1
+2023-09-05 05:48:22,657:INFO:                tqdm: 4.66.1
+2023-09-05 05:48:22,657:INFO:               numpy: 1.23.5
+2023-09-05 05:48:22,657:INFO:              pandas: 1.5.3
+2023-09-05 05:48:22,658:INFO:              jinja2: 3.1.2
+2023-09-05 05:48:22,658:INFO:               scipy: 1.10.1
+2023-09-05 05:48:22,658:INFO:              joblib: 1.3.2
+2023-09-05 05:48:22,658:INFO:             sklearn: 1.2.2
+2023-09-05 05:48:22,658:INFO:                pyod: 1.1.0
+2023-09-05 05:48:22,658:INFO:            imblearn: 0.10.1
+2023-09-05 05:48:22,658:INFO:   category_encoders: 2.6.2
+2023-09-05 05:48:22,659:INFO:            lightgbm: 4.0.0
+2023-09-05 05:48:22,659:INFO:               numba: 0.56.4
+2023-09-05 05:48:22,659:INFO:            requests: 2.31.0
+2023-09-05 05:48:22,659:INFO:          matplotlib: 3.7.1
+2023-09-05 05:48:22,659:INFO:          scikitplot: 0.3.7
+2023-09-05 05:48:22,659:INFO:         yellowbrick: 1.5
+2023-09-05 05:48:22,659:INFO:              plotly: 5.15.0
+2023-09-05 05:48:22,660:INFO:    plotly-resampler: Not installed
+2023-09-05 05:48:22,660:INFO:             kaleido: 0.2.1
+2023-09-05 05:48:22,660:INFO:           schemdraw: 0.15
+2023-09-05 05:48:22,660:INFO:         statsmodels: 0.14.0
+2023-09-05 05:48:22,660:INFO:              sktime: 0.22.0
+2023-09-05 05:48:22,660:INFO:               tbats: 1.1.3
+2023-09-05 05:48:22,660:INFO:            pmdarima: 2.0.3
+2023-09-05 05:48:22,660:INFO:              psutil: 5.9.5
+2023-09-05 05:48:22,661:INFO:          markupsafe: 2.1.3
+2023-09-05 05:48:22,661:INFO:             pickle5: Not installed
+2023-09-05 05:48:22,661:INFO:         cloudpickle: 2.2.1
+2023-09-05 05:48:22,661:INFO:         deprecation: 2.1.0
+2023-09-05 05:48:22,661:INFO:              xxhash: 3.3.0
+2023-09-05 05:48:22,661:INFO:           wurlitzer: 3.0.3
+2023-09-05 05:48:22,661:INFO:PyCaret optional dependencies:
+2023-09-05 05:48:22,806:WARNING:/usr/local/lib/python3.10/dist-packages/trio/_core/_multierror.py:412: RuntimeWarning: IPython detected, but you already have a custom exception handler installed. I'll skip installing Trio's custom handler, but this means exception groups will not show full tracebacks.
+  warnings.warn(
+
+2023-09-05 05:48:24,281:INFO:                shap: 0.42.1
+2023-09-05 05:48:24,281:INFO:           interpret: 0.4.4
+2023-09-05 05:48:24,282:INFO:                umap: 0.5.3
+2023-09-05 05:48:24,282:INFO:    pandas_profiling: 3.6.6
+2023-09-05 05:48:24,282:INFO:  explainerdashboard: 0.4.3
+2023-09-05 05:48:24,282:INFO:             autoviz: 0.1.730
+2023-09-05 05:48:24,282:INFO:           fairlearn: 0.7.0
+2023-09-05 05:48:24,282:INFO:          deepchecks: 0.17.4
+2023-09-05 05:48:24,282:INFO:             xgboost: 1.7.6
+2023-09-05 05:48:24,283:INFO:            catboost: 1.2.1
+2023-09-05 05:48:24,283:INFO:              kmodes: 0.12.2
+2023-09-05 05:48:24,283:INFO:             mlxtend: 0.22.0
+2023-09-05 05:48:24,283:INFO:       statsforecast: 1.6.0
+2023-09-05 05:48:24,283:INFO:        tune_sklearn: 0.4.6
+2023-09-05 05:48:24,283:INFO:                 ray: 2.6.3
+2023-09-05 05:48:24,283:INFO:            hyperopt: 0.2.7
+2023-09-05 05:48:24,283:INFO:              optuna: 3.3.0
+2023-09-05 05:48:24,284:INFO:               skopt: 0.9.0
+2023-09-05 05:48:24,284:INFO:              mlflow: 1.30.1
+2023-09-05 05:48:24,284:INFO:              gradio: 3.42.0
+2023-09-05 05:48:24,284:INFO:             fastapi: 0.103.1
+2023-09-05 05:48:24,284:INFO:             uvicorn: 0.23.2
+2023-09-05 05:48:24,284:INFO:              m2cgen: 0.10.0
+2023-09-05 05:48:24,284:INFO:           evidently: 0.2.8
+2023-09-05 05:48:24,284:INFO:               fugue: 0.8.6
+2023-09-05 05:48:24,284:INFO:           streamlit: Not installed
+2023-09-05 05:48:24,285:INFO:             prophet: 1.1.4
+2023-09-05 05:48:24,285:INFO:None
+2023-09-05 05:48:24,285:INFO:Set up data.
